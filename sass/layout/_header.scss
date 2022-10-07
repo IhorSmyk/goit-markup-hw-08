@@ -1,3 +1,44 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header .logo {
+  color: #000000;
+
+  font-family: 'Raleway';
+  @include font(700, 24px, 28px);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  .logo__part {
+    color: var(--hoverfocus-color);
+  }
+}
+
+.navigation {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0%;
+}
+
+
+
+
+
 // .header {
 //   padding-top: 25px;
 //   padding-bottom: 25px;

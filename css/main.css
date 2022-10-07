@@ -109,6 +109,42 @@ address {
   margin-bottom: 50px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header .logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.header .logo .logo__part {
+  color: var(--hoverfocus-color);
+}
+
+.navigation {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0%;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
