@@ -292,6 +292,13 @@ address {
   .navigation-item__link,
 .contact-item__link {
     color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-dur-and-func);
+  }
+  .navigation-item__link:focus, .navigation-item__link:hover,
+.contact-item__link:focus,
+.contact-item__link:hover {
+    color: var(--hoverfocus-color);
   }
   .navigation-item__link_current {
     position: relative;
@@ -306,6 +313,13 @@ address {
     height: 4px;
     top: 45px;
     border-radius: 2px;
+  }
+  .contact-item__icon {
+    fill: var(--foreground-color2);
+    transition: fill var(--transition-dur-and-func);
+  }
+  .contact-item__link:hover .contact-item__icon, .contact-item__link:focus .contact-item__icon {
+    fill: var(--hoverfocus-color);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -342,13 +356,6 @@ address {
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color var(--transition-dur-and-func);
-  }
-  .navigation-item__link:focus, .navigation-item__link:hover,
-.contact-item__link:focus,
-.contact-item__link:hover {
-    color: var(--hoverfocus-color);
   }
   .navigation-item__link {
     color: var(--foreground-color1);
@@ -358,13 +365,6 @@ address {
     display: flex;
     align-items: center;
     column-gap: 10px;
-  }
-  .contact-item__icon {
-    fill: var(--foreground-color2);
-    transition: fill var(--transition-dur-and-func);
-  }
-  .contact-item__link:hover .contact-item__icon, .contact-item__link:focus .contact-item__icon {
-    fill: var(--hoverfocus-color);
   }
 }
 .backdrop {
