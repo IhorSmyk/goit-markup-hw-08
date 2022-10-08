@@ -111,27 +111,27 @@ address {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    background-color: var(--background-color1);
     position: fixed;
-    z-index: 111;
     top: 0;
     left: 0;
+    z-index: 100;
     width: 100%;
     height: 100%;
     max-height: 796px;
-    background-color: var(--background-color1);
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.2);
-    padding: 48px 40px;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
   }
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
-    pointer-events: none;
+    pointer-events: auto;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -140,7 +140,13 @@ address {
     background-color: transparent;
     border: none;
     padding: 0;
-    line-height: 0%;
+    line-height: 0;
+  }
+  .mobile-menu__close-icon {
+    transition: fill var(--transition-dur-and-func);
+  }
+  .mobile-menu__close-btn:hover .mobile-menu__close-icon, .mobile-menu__close-btn:focus .mobile-menu__close-icon {
+    fill: var(--hoverfocus-color);
   }
   .mobile-navigation {
     display: flex;
@@ -153,22 +159,48 @@ address {
     letter-spacing: 0.02em;
     color: var(--foreground-color1);
   }
-  .mobile-navigation-item__link_current {
-    color: var(--hoverfocus-color);
+  .mobile-menu__nav-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
   }
-  .mobile-navigation-item__link {
-    color: inherit;
+  .mobile-menu__nav-link_curent {
+    color: var(--accent-color);
   }
-  .mobile-navigation-item__link:hover, .mobile-navigation-item__link:focus {
-    color: var(--hoverfocus-color);
+  .mobile-menu__auth {
+    margin-bottom: 64px;
   }
-  .mobile-contact {
-    margin-top: auto;
+  .mobile-menu__auth-item:first-child {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__tel-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mobile-menu__mail-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+  }
+  .mobile-menu__social {
     display: flex;
-    flex-direction: column;
-    row-gap: 32px;
+    column-gap: 20px;
   }
-  .mobile-contact-item .tel {
+  .mobile-menu__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  .mobile-menu__social-link .mobile-contact-item .tel {
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
@@ -177,7 +209,7 @@ address {
     color: var(--foreground-color2);
     margin-bottom: 32px;
   }
-  .mobile-contact-item .mail {
+  .mobile-menu__social-link .mobile-contact-item .mail {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -186,7 +218,7 @@ address {
     color: var(--foreground-color2);
     margin-bottom: 32px;
   }
-  .mobile-socials {
+  .mobile-menu__social-link .mobile-socials {
     margin-top: 64px;
     display: flex;
     column-gap: 20px;
@@ -199,9 +231,17 @@ address {
     flex-wrap: wrap;
     color: var(--hoverfocus-color);
   }
-  .mobile-socials-item__link {
+  .mobile-menu__social-link .mobile-socials-item__link {
     color: inherit;
     text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
