@@ -1,24 +1,31 @@
-.about-job {
-    background-color: var(--background-color1);
-    padding-top: 47px;
+@media screen and (max-width: 1199px) {
+  .about-job {
+    display: none;
+  }
 }
 
-.job-list {
+@media screen and (min-width: 1200px) {
+  .about-job {
+    background-color: var(--background-color1);
+    padding-top: 47px;
+  }
+
+  .job-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
-}
+  }
 
-.job-item {
+  .job-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
-}
+  }
 
-.job-item-thumb {
+  .job-item-thumb {
     position: relative;
     overflow: hidden;
-}
+  }
 
-.job-item-overlay-text {
+  .job-item-overlay-text {
     background: rgba(47, 48, 58, 0.8);
     color: var(--foreground-color3);
 
@@ -36,4 +43,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-top: 27px;
+  }
 }
+
+
+//////////////////////////////
