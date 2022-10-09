@@ -570,53 +570,6 @@ address {
   background-color: var(--hoverfocus-color);
 }
 
-.hero {
-  background-color: var(--background-color3);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/indexpics/herobackground.jpg);
-  background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero__title {
-  color: var(--foreground-color3);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  width: 650px;
-}
-
-.hero__button {
-  background-color: var(--button);
-  color: var(--foreground-color3);
-  font-family: inherit;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  border-radius: 4px;
-  transition: background-color var(--transition-dur-and-func);
-}
-.hero__button:hover, .hero__button:focus {
-  background-color: var(--hoverfocus-color);
-}
-
 .features-section {
   padding-bottom: 47px;
   background-color: var(--background-color1);
