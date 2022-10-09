@@ -707,18 +707,14 @@ address {
   margin-left: auto;
   margin-right: auto;
 }
+.our-team .title {
+  margin-bottom: 30px;
+}
 
 .our-team-list {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   row-gap: 30px;
-}
-
-.team-member-photo {
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .team-item {
@@ -789,6 +785,27 @@ address {
 @media screen and (min-width: 480px) {
   .team-item {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    flex-direction: row;
+    row-gap: 30px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+  }
+  .team-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-wrapper {
+    background-color: var(--background-color1);
+    padding-bottom: 30px;
+  }
+  .team-item {
+    flex-basis: calc((100% - 90px) / 4);
+    width: 270px;
   }
 }
 .client-list {
