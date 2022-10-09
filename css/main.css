@@ -704,6 +704,8 @@ address {
 }
 .our-team {
   background-color: var(--background-color2);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .our-team-list {
@@ -731,6 +733,8 @@ address {
   padding-top: 30px;
   padding-bottom: 24px;
   width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-member-name {
