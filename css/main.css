@@ -589,9 +589,9 @@ address {
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bgd/bgd-mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/hero/mobile/background.jpg");
   background-size: cover;
-  background-color: #2F303A;
+  background-color: #2f303a;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -609,34 +609,56 @@ address {
   margin-left: auto;
   margin-right: auto;
   width: 360px;
+  text-transform: uppercase;
+}
+.hero__button {
+  background-color: var(--button);
+  color: var(--foreground-color3);
+  font-family: inherit;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 24px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-dur-and-func);
+}
+.hero__button:hover, .hero__button:focus {
+  background-color: var(--hoverfocus-color);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .solutions {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgd/bgd-mob@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/hero/mobile/background@2x.jpg");
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .solutions {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgd/bgd-tab.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/hero/tablet/background.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 481px), screen and (min-resolution: 192dpi) and (min-width: 481px), screen and (min-resolution: 2dppx) and (min-width: 481px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 481px), screen and (min-resolution: 2dppx) and (min-width: 481px) {
   .solutions {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgd/bgd-tab@2x.jpg");
-  }
-}
-@media screen and (min-width: 769px) {
-  .solutions {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgd/bgd-desk.jpg");
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px), screen and (min-resolution: 192dpi) and (min-width: 769px), screen and (min-resolution: 2dppx) and (min-width: 769px) {
-  .solutions {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgd/bgd-desk@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/hero/tablet/background@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
+  .solutions {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/hero/desktop/background.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 769px), screen and (min-resolution: 2dppx) and (min-width: 769px) {
+  .solutions {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/index/hero/desktop/background@2x.jpg");
+  }
   .solutions__section {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -645,6 +667,9 @@ address {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;
+  }
+  .hero__button {
+    padding: 10px 32px;
   }
 }
 .features-section {
