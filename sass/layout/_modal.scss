@@ -144,21 +144,17 @@
 
 .modal-form-check-agreement {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  @include font(400, 12px, 14px);
   letter-spacing: 0.03em;
+  text-decoration-line: underline;
   color: var(--foreground-color2);
 }
 
 .modal-form-check-agreement-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  @include font(400, 12px, 14px);
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-
   color: var(--hoverfocus-color);
 }
 
@@ -190,6 +186,11 @@
 
 @media screen and (min-width: 1200px) {
   .modal {
-      width: 528px;
+    width: 528px;
+  }
+
+  .modal-form-check-agreement-link,
+  .modal-form-check-agreement {
+    @include font(400, 12px, 14px);
   }
 }
