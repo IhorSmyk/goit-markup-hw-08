@@ -1227,19 +1227,17 @@ img,
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
   }
   .our-contacts {
     margin-left: 51px;
   }
   .our-socials {
     margin-right: 74px;
-    margin-bottom: 40px;
+    margin-top: 12px;
   }
   .subscription {
     width: 450px;
@@ -1254,6 +1252,7 @@ img,
   }
   .our-socials {
     margin-left: 70px;
+    align-items: flex-start;
   }
   .our-contacts-list {
     row-gap: 9px;
@@ -1267,8 +1266,16 @@ img,
     letter-spacing: 0.03em;
   }
   .subscription {
+    margin-top: 12px;
     width: auto;
     margin-left: auto;
+    margin-right: 0;
+  }
+  .subscription-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    align-items: center;
   }
   .subscription-title {
     margin-left: 0;
@@ -1278,47 +1285,5 @@ img,
   }
   .our-contacts {
     margin-left: 0px;
-  }
-  .our-socials {
-    margin-right: 0px;
-    margin-bottom: 40px;
-  }
-  .footer-link-map,
-.footer-link-contact {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    transition: color var(--transition-dur-and-func);
-  }
-  /*--------socials---------*/
-  .our-socials {
-    align-items: flex-start;
-  }
-  .our-socials-title,
-.subscription-title {
-    color: var(--background-color1);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-  .our-socials-list {
-    display: flex;
-    column-gap: 10px;
-  }
-  /*--------subscription---------*/
-  .subscription {
-    margin-left: auto;
-  }
-  .subscription-wrapper {
-    display: flex;
-    align-items: center;
-    column-gap: 12px;
   }
 }/*# sourceMappingURL=main.css.map */

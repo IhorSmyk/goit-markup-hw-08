@@ -10,8 +10,6 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     margin-bottom: 20px;
-    // margin-left: auto;
-    // margin-right: auto;
 
     .logo-web {
       color: var(--hoverfocus-color);
@@ -77,9 +75,8 @@
 .our-socials {
   display: flex;
   flex-direction: column;
-    align-items: center;
+  align-items: center;
 }
-
 
 .our-socials-list {
   display: flex;
@@ -87,7 +84,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .our-socials-item-icon {
   fill: var(--foreground-color3);
@@ -113,7 +109,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  // row-gap: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -177,13 +172,10 @@
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    // margin-bottom: 60px;
-    align-items: center;
   }
 
   .our-contacts {
@@ -192,7 +184,7 @@
 
   .our-socials {
     margin-right: 74px;
-    margin-bottom: 40px;
+    margin-top: 12px;
   }
 
   .subscription {
@@ -201,24 +193,24 @@
 }
 
 @media screen and (min-width: 1200px) {
-.footer-container {
+  .footer-container {
     flex-direction: row;
-
   }
 
-.our-contacts {
-align-items: flex-start;
-}
+  .our-contacts {
+    align-items: flex-start;
+  }
 
-.our-socials {
-  margin-left: 70px;
-}
+  .our-socials {
+    margin-left: 70px;
+    align-items: flex-start;
+  }
 
   .our-contacts-list {
     row-gap: 9px;
-      align-items: flex-start;
+    align-items: flex-start;
   }
-///
+  ///
   .footer {
     .logo {
       font-family: 'Raleway';
@@ -226,93 +218,34 @@ align-items: flex-start;
       letter-spacing: 0.03em;
     }
   }
-//////
-
-
-    .subscription {
-      width: auto;
-      margin-left: auto;
-    }
-
-
-    ////////
-.subscription-title {
-  margin-left: 0;
-}
-////////////////
-
-
-////
-.subscription-input {
-  width: 358px;
-}
-////
-
-
-
-
-    .our-contacts {
-      margin-left: 0px;
-    }
-  
-    .our-socials {
-      margin-right: 0px;
-      margin-bottom: 40px;
-    }
-
-
-
-
-
-
-  .footer-link-map,
-  .footer-link-contact {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    transition: color var(--transition-dur-and-func);
-  }
-
-  /*--------socials---------*/
-
-  .our-socials {
-    align-items: flex-start;
-  }
-
-
-
-
-
-  .our-socials-title,
-  .subscription-title {
-    color: var(--background-color1);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-
-  .our-socials-list {
-    display: flex;
-    column-gap: 10px;
-  }
-
-  /*--------subscription---------*/
 
   .subscription {
+    margin-top: 12px;
+    width: auto;
     margin-left: auto;
+    margin-right: 0;
   }
 
   .subscription-wrapper {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     column-gap: 12px;
+    align-items: center;
   }
 
+  ////////
+  .subscription-title {
+    margin-left: 0;
+  }
+  ////////////////
+
+  ////
+  .subscription-input {
+    width: 358px;
+  }
+  ////
+
+  .our-contacts {
+    margin-left: 0px;
+  }
 }
