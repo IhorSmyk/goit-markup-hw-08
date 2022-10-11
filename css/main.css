@@ -356,11 +356,9 @@ address {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .header__navigation {
-    column-gap: 94px;
-  }
   .navigation {
     column-gap: 52px;
+    margin-left: 92px;
   }
   .contact {
     display: flex;
