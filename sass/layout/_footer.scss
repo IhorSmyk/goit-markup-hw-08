@@ -199,6 +199,7 @@
 
   .our-contacts {
     align-items: flex-start;
+    margin-left: 0px;
   }
 
   .our-socials {
@@ -210,7 +211,7 @@
     row-gap: 9px;
     align-items: flex-start;
   }
-  ///
+  
   .footer {
     .logo {
       font-family: 'Raleway';
@@ -233,19 +234,10 @@
     align-items: center;
   }
 
-  ////////
   .subscription-title {
     margin-left: 0;
   }
-  ////////////////
-
-  ////
   .subscription-input {
     width: 358px;
-  }
-  ////
-
-  .our-contacts {
-    margin-left: 0px;
   }
 }

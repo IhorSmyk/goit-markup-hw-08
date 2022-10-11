@@ -1249,6 +1249,7 @@ img,
   }
   .our-contacts {
     align-items: flex-start;
+    margin-left: 0px;
   }
   .our-socials {
     margin-left: 70px;
@@ -1282,8 +1283,5 @@ img,
   }
   .subscription-input {
     width: 358px;
-  }
-  .our-contacts {
-    margin-left: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
