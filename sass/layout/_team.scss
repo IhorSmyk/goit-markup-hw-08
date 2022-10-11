@@ -24,6 +24,13 @@
   margin-right: auto;
 }
 
+img,
+.team-member-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .team-wrapper {
   width: auto;
   background-color: var(--background-color1);

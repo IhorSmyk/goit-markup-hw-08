@@ -4,7 +4,8 @@
 
 .client-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  row-gap: 30px;
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
