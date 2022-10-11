@@ -1069,8 +1069,6 @@ img,
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .footer .logo .logo-web {
   color: var(--hoverfocus-color);
@@ -1080,13 +1078,13 @@ img,
   display: flex;
   flex-direction: column;
   row-gap: 60px;
-  margin-bottom: 60px;
   align-items: center;
 }
 
 .our-contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .our-contacts-list {
@@ -1131,8 +1129,12 @@ img,
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.our-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .our-socials-list {
@@ -1140,11 +1142,6 @@ img,
   column-gap: 10px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.our-socials {
-  display: flex;
-  flex-direction: column;
 }
 
 .our-socials-item-icon {
@@ -1169,6 +1166,11 @@ img,
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription-title {
   margin-left: auto;
   margin-right: auto;
 }
@@ -1206,7 +1208,7 @@ img,
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.875;
   display: flex;
   align-items: center;
   text-align: center;
@@ -1230,7 +1232,6 @@ img,
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 60px;
     align-items: center;
   }
   .our-contacts {
@@ -1246,39 +1247,41 @@ img,
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
+    flex-direction: row;
+  }
+  .our-contacts {
     align-items: flex-start;
   }
-  .our-contacts-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 9px;
+  .our-socials {
+    margin-left: 70px;
   }
-  .footer {
-    background-color: var(--background-color3);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .our-contacts-list {
+    row-gap: 9px;
+    align-items: flex-start;
   }
   .footer .logo {
-    color: var(--foreground-color3);
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.1923076923;
     letter-spacing: 0.03em;
-    text-decoration: none;
   }
-  .footer .logo .logo-web {
-    color: var(--hoverfocus-color);
+  .subscription {
+    width: auto;
+    margin-left: auto;
   }
-  .footer-container {
-    display: flex;
-    column-gap: 70px;
+  .subscription-title {
+    margin-left: 0;
   }
-  .our-contacts-list {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 9px;
+  .subscription-input {
+    width: 358px;
+  }
+  .our-contacts {
+    margin-left: 0px;
+  }
+  .our-socials {
+    margin-right: 0px;
+    margin-bottom: 40px;
   }
   .footer-link-map,
 .footer-link-contact {
@@ -1292,8 +1295,7 @@ img,
   }
   /*--------socials---------*/
   .our-socials {
-    display: flex;
-    flex-direction: column;
+    align-items: flex-start;
   }
   .our-socials-title,
 .subscription-title {
@@ -1318,43 +1320,5 @@ img,
     display: flex;
     align-items: center;
     column-gap: 12px;
-  }
-  .subscription-input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: var(--background-color3);
-    color: var(--foreground-color3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: outline var(--transition-dur-and-func);
-  }
-  .subscription-input:focus {
-    outline: 1px solid var(--hoverfocus-color);
-  }
-  .subscription-btn {
-    cursor: pointer;
-    padding: 10px 28px;
-    background-color: var(--button);
-    color: var(--background-color1);
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    transition: background-color var(--transition-dur-and-func);
-  }
-  .subscription-btn:focus, .subscription-btn:hover {
-    background-color: var(--hoverfocus-color);
-  }
-  .subscription-btn-icon {
-    margin-left: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
