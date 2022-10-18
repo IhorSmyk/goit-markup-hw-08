@@ -1,7 +1,9 @@
 .buttons-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 8px;
+  row-gap: 8px;
   padding-bottom: 34px;
 }
 
