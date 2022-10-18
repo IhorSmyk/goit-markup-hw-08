@@ -106,7 +106,7 @@
 .mobile-socials-item__link {
   color: var(--hoverfocus-color);
   font-style: normal;
-  @include font(500, 12px, 22px);
+  @include font(500, 10px, 22px);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
