@@ -1056,7 +1056,7 @@ address {
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--foreground-color3);
-  padding: 63px 24px 63px;
+  padding: 24px;
 }
 .projects-item:hover .projects-item-overlay, .projects-item:focus .projects-item-overlay {
   transform: translateY(0%);
