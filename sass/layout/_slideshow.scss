@@ -1,38 +1,37 @@
 @media screen and (min-width: 1200px) {
-    .slideshow {
-        display: none;
-    }
+  .slideshow {
+    display: none;
+  }
+}
+
+.slideshow {
+  padding-top: 30px;
 }
 
 .slideshow-container {
-    // max-width: 1000px;
-    // position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+  //   max-width: 1000px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 500ms;
-    margin-left: auto;
-    margin-right: auto;
+  animation-name: fade;
+  animation-duration: 500ms;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
+  from {
+    opacity: 0.5;
+  }
 
-    to {
-        opacity: 1
-    }
-}
-
-@media screen and (min-width: 480px) {
-    .fade {
-width: 450px;  
+  to {
+    opacity: 1;
   }
 }

@@ -1334,7 +1334,12 @@ address {
     display: none;
   }
 }
+.slideshow {
+  padding-top: 30px;
+}
+
 .slideshow-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1347,18 +1352,14 @@ address {
   animation-duration: 500ms;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
-  }
-}
-@media screen and (min-width: 480px) {
-  .fade {
-    width: 450px;
   }
 }/*# sourceMappingURL=main.css.map */
